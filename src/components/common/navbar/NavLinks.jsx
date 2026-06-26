@@ -42,7 +42,7 @@ export default function NavLinks() {
                     <div className="w-1/5 px-2 pb-2">
                       <Link
                         className={`text-sm capitalize font-semibold mb-2 inline-block ${hoverValue === "men" ? "text-pink-600" : hoverValue === "women" ? "text-pink-400" : ""}`}
-                        href={category.url}
+                        href={`/${category.url}`}
                       >
                         {category.title}
                       </Link>
@@ -53,7 +53,7 @@ export default function NavLinks() {
                             <Link
                               className="text-sm capitalize mb-2 transition hover:font-semibold"
                               key={subcategory.item}
-                              href={subcategory.url}
+                              href={`/${subcategory.url}`}
                             >
                               {subcategory.item}
                             </Link>
