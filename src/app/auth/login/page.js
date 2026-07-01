@@ -12,6 +12,7 @@ export default function Login() {
             alt="Fashion banner"
             fill
             sizes="100%"
+            loading="eager"
             className="object-cover object-top"
           />
         </div>
